@@ -1,2 +1,93 @@
-# r_data_science_qualifying_exam
-[O24P739COZ] This formative assignment is designed to help you consolidate key concepts in R programming, including vectorization, control flow, function writing, data manipulation, and basic visualization. You are encouraged to reference course materials and seek additional learning resources if needed.
+
+# 📘 R Programming for Data Science: Introduction  
+## 📝 Formative Assignment (Non-graded)
+
+**Due Date:** 5 June 2025, 5:59 AM  
+**Release Date:** 19 May 2025, 6:00 AM  
+**Submission Format:** Word Document or PDF  
+**Submission Method:** Email to `weeklyclasses@conted.ox.ac.uk`  
+**Attach:** Completed Declaration of Authorship form
+
+---
+
+## 📂 Overview
+
+This formative assignment is designed to help you consolidate key concepts in R programming, including vectorization, control flow, function writing, data manipulation, and basic visualization. You are encouraged to reference course materials and seek additional learning resources if needed.
+
+---
+
+## ✅ Assignment Questions
+
+### Q1: R Programming Concepts
+
+Answer each question in **no more than 60 words**:
+
+- **a)** What is vectorization in R, and what are its benefits?  
+- **b)** What is recycling in R? Provide an example.  
+- **c)** What is operator precedence? Provide an R example.  
+- **d)** What is function scope, and why is it important?
+
+---
+
+### Q2: Control Flow and Looping
+
+- **a)** Write an R function `fibonacci(n)` that returns the first `n` Fibonacci numbers as a vector.  
+- **b)** Write a `while` loop that prints Fibonacci numbers **until their sum exceeds 1000**.
+
+---
+
+### Q3: Functions and Data Manipulation
+
+- **a)** Write a function `calculate_mean_sd()` that takes a numeric vector and returns a **list** containing its **mean** and **standard deviation**.  
+- **b)** Write a function `filter_data()` that accepts:
+  - a **data frame**,  
+  - a **column name**, and  
+  - a **threshold** value.  
+  It should return a filtered data frame with rows where the column value exceeds the threshold.
+
+---
+
+### Q4: Data Manipulation and Analysis with `mtcars`
+
+Using R’s built-in `mtcars` dataset:
+
+- **a)** Identify the cars with the **highest** and **lowest** `mpg` (miles per gallon).  
+- **b)** Calculate the **average weight (`wt`)** for cars grouped by number of cylinders (`cyl`).  
+  _Hint: Consider using `tapply()` for a concise solution._
+
+---
+
+### Q5: Data Visualization
+
+Use the provided script [`Generate-data-1.R`](Generate-data-1.R) to generate your dataset.
+
+- **a)** Write your own R code to generate a **scatter plot** matching the one linked in the course materials.  
+- **b)** Write your own R code to generate a **box plot** matching the one linked in the course materials.
+
+---
+
+## 📤 Submission Guidelines
+
+1. Submit a **well-structured report** containing:
+   - Clear explanations
+   - R code (as **plain text**, not screenshots)
+   - Any additional screenshots or outputs if helpful
+
+2. Submit by **email** to:  
+   📧 `weeklyclasses@conted.ox.ac.uk`
+
+3. Attach your **Declaration of Authorship** form as per the student handbook.
+
+---
+
+## 🧠 Tips & Resources
+
+- Use the course materials, R documentation, and trusted online tutorials.
+- Practice reproducible coding with comments and structured functions.
+- Format your report professionally with sections, headings, and explanations.
+
+---
+
+## 🎓 Good Luck!
+
+This assignment is a chance to test and apply your learning. Focus on clarity, accuracy, and showcasing your understanding of R.
