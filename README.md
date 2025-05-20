@@ -22,7 +22,10 @@ This formative assignment is designed to help you consolidate key concepts in R 
 
 Answer each question in **no more than 60 words**:
 
-- **a)** What is vectorization in R, and what are its benefits?  
+- **a)** What is vectorization in R, and what are its benefits?
+  Vectorisation is an implicit process in R where an operation can be peformed on each elements of a vector.
+  A benefit of vecitorisation is that the code becomes more readable because there is no need to explicitly loop over elements of vector.
+  for example two vectors can added together or a numerical value can be muliplied for all the vector values.
 - **b)** What is recycling in R? Provide an example.  
 - **c)** What is operator precedence? Provide an R example.  
 - **d)** What is function scope, and why is it important?
