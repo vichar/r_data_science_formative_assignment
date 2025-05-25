@@ -80,8 +80,11 @@ data <- list(
 ``` 
 
 - **a)** Write your own R code to generate a **scatter plot** matching the one linked in the course materials.
+
 <img width="1060" alt="scatter-plot-1" src="https://github.com/user-attachments/assets/99317545-3662-4c68-b407-832589633594" />
+
 - **b)** Write your own R code to generate a **box plot** matching the one linked in the course materials.
+
 <img width="820" alt="box-plot" src="https://github.com/user-attachments/assets/5bdd49c6-d1f6-4236-b546-a6e3dad7f312" />
 
 
