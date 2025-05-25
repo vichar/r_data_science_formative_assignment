@@ -65,7 +65,7 @@ Using R’s built-in `mtcars` dataset:
 ### Q5: Data Visualization
 
 Use the provided script [`Generate-data-1.R`](Generate-data-1.R) to generate your dataset.
-```
+``` r
 # For the scatter-plot, you can use this code to generate the data:
 set.seed(1)
 x <- rnorm(100)
@@ -78,7 +78,7 @@ data <- list(
   Group2 = rnorm(100, mean = 2),
   Group3 = rnorm(100, mean = 1.5)
 )
-``` r
+``` 
 
 - **a)** Write your own R code to generate a **scatter plot** matching the one linked in the course materials.  
 - **b)** Write your own R code to generate a **box plot** matching the one linked in the course materials.
