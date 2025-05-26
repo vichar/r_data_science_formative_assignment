@@ -23,10 +23,12 @@ Answer each question in **no more than 60 words**:
 
 - **a)** What is vectorization in R, and what are its benefits?
 
-  Vectorisation is an implicit process in R where an operation can be performed on each element of a vector.
-  A benefit of vectorisation is that the code becomes more readable because there is no need to explicitly loop over elements of a vector. For example, two vectors can be added together, or   a numerical value can be multiplied for all the vector values. (Matloff, 2011)
+  - Vectorisation is an implicit process in R where an operation can be performed on each element of a vector.
+  - A benefit of vectorisation is that the code becomes more readable because there is no need to explicitly loop over elements of a vector.
+  - For example, two vectors can be added together, or   a numerical value can be multiplied for all the vector values. (Matloff, 2011)
   
 - **b)** What is recycling in R? Provide an example.
+  
   - Recycling rules apply when performing operations on vectors of different lengths.
   - If one variable is a single number, it is treated as a vector matching the length of the other variable.
   - R will recycle the shorter vector if the longer vector's length is a multiple of the shorter vector's length.
