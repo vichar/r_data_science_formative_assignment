@@ -23,16 +23,15 @@ Answer each question in **no more than 60 words**:
 
 - **a)** What is vectorization in R, and what are its benefits?
 
-  Vectorisation is an implicit process in R where an operation can be peformed on each elements of a vector.
-  
-  A benefit of vecitorisation is that the code becomes more readable because there is no need to explicitly loop over elements of vector.
-  for example two vectors can added together or a numerical value can be muliplied for all the vector values.(Matloff, 2011)
+  Vectorisation is an implicit process in R where an operation can be performed on each element of a vector.
+
+A benefit of vectorisation is that the code becomes more readable because there is no need to explicitly loop over elements of a vector. For example, two vectors can be added together, or a numerical value can be multiplied for all the vector values. (Matloff, 2011)
   
 - **b)** What is recycling in R? Provide an example.
   - Recycling rules apply when performing operations on vectors of different lengths.
   - If one variable is a single number, it is treated as a vector matching the length of the other variable.
   - R will recycle the shorter vector if the longer vector's length is a multiple of the shorter vector's length.
-  - Otherwise, it issues a warning and performs the operation on overlapping elements.
+  - Otherwise, it issues a warning and performs the operation on overlapping elements.(Hadley, 2025)
 
 - **c)** What is operator precedence? Provide an R example.  
 - **d)** What is function scope, and why is it important?
@@ -126,3 +125,4 @@ This assignment is a chance to test and apply your learning. Focus on clarity, a
 
 ## References
 Matloff, N. (2011) The Art of R Programming, No Starch Press. Available at: https://learning.oreilly.com/library/view/the-art-of/9781593273842/ch02s06.html#vector_in_comma_vector_out [Accessed 26 May 2025], Section: Vectorized Operations.
+Hadley, W. (2025) R for Data Science (2e). Available at: https://r4ds.hadley.nz/numbers.html#numeric-summaries [Accessed 26 May 2025], Section: Numeric Transformations.
