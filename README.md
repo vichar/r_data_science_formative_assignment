@@ -34,9 +34,39 @@ Answer each question in **no more than 60 words**:
   - R will recycle the shorter vector if the longer vector's length is a multiple of the shorter vector's length.
   - Otherwise, it issues a warning and performs the operation on overlapping elements.(Hadley, 2025)
 
-- **c)** What is operator precedence? Provide an R example.  
+- **c)** What is operator precedence? Provide an R example.
+  - Operator precedence in computer science simply means the order which mathematical and logical operations are to be performed
+  - One notable exception any operation in side brackets are performed first from left to right
+  - Examples in R
+    This example 3 * 3 is performed before any additions according to roder of precedence
+    ``` r
+    > a <- 3 * 3 + 2
+    > cat("a: ", a)
+    a:  11
+    ```
+    This example 3 + 2 is performed due to ( ) has higher precedence than
+    multiplication
+    ``` r
+    > b <- 3 * (3 + 2)
+    > cat ("b: ", b)
+    b:  15
+    > 
+    ```
+    This example 3 + 2 is performed due to ( ) has higher precedence than
+    multiplication
+    ``` r
+    > b <- 3 * (3 + 2)
+    > cat ("b: ", b)
+    b:  15
+    > 
+    ```
 - **d)** What is function scope, and why is it important?
-
+  - Scope denotes the visibility or accessibility of variables and functions.
+  - Variables defined in the global or higher scope will be visible within any       function defined within the script.
+  - Variables or functions defined within a function will only be visible within     that function's scope.
+  - In the event of naming conflict, the definition and assignment within the        function's scope takes precedence over higher scopes, including global scope.
+  - Understanding the function scope is essential for tracking names,
+    assignments, and values of variables and functions at any moment.
 ---
 
 ### Q2: Control Flow and Looping
