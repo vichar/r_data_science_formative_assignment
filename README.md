@@ -1,5 +1,5 @@
-# 📘 R Programming for Data Science: Introduction  
-## 📝 Formative Assignment (Non-graded)
+# R Programming for Data Science: Introduction  
+## Formative Assignment (Non-graded)
 
 **Due Date:** 5 June 2025, 5:59 AM  
 **Release Date:** 19 May 2025, 6:00 AM  
@@ -9,13 +9,13 @@
 
 ---
 
-## 📂 Overview
+## Overview
 
 This formative assignment is designed to help you consolidate key concepts in R programming, including vectorization, control flow, function writing, data manipulation, and basic visualization. You are encouraged to reference course materials and seek additional learning resources if needed.
 
 ---
 
-## ✅ Assignment Questions
+## Assignment Questions
 
 ### Q1: R Programming Concepts
 
@@ -23,11 +23,17 @@ Answer each question in **no more than 60 words**:
 
 - **a)** What is vectorization in R, and what are its benefits?
 
-   Vectorisation is an implicit process in R where an operation can be peformed on each elements of a vector.
-  A benefit of vecitorisation is that the code becomes more readable because there is no need to explicitly loop over elements of vector.
-  for example two vectors can added together or a numerical value can be muliplied for all the vector values.
+  Vectorisation is an implicit process in R where an operation can be peformed on each elements of a vector.
   
-- **b)** What is recycling in R? Provide an example.  
+  A benefit of vecitorisation is that the code becomes more readable because there is no need to explicitly loop over elements of vector.
+  for example two vectors can added together or a numerical value can be muliplied for all the vector values.(Matloff, 2011)
+  
+- **b)** What is recycling in R? Provide an example.
+  - Recycling rules apply when performing operations on vectors of different lengths.
+  - If one variable is a single number, it is treated as a vector matching the length of the other variable.
+  - R will recycle the shorter vector if the longer vector's length is a multiple of the shorter vector's length.
+  - Otherwise, it issues a warning and performs the operation on overlapping elements.
+
 - **c)** What is operator precedence? Provide an R example.  
 - **d)** What is function scope, and why is it important?
 
@@ -91,7 +97,7 @@ data <- list(
 ---
 
 
-## 📤 Submission Guidelines
+## Submission Guidelines
 
 1. Submit a **well-structured report** containing:
    - Clear explanations
@@ -105,7 +111,7 @@ data <- list(
 
 ---
 
-## 🧠 Tips & Resources
+## Tips & Resources
 
 - Use the course materials, R documentation, and trusted online tutorials.
 - Practice reproducible coding with comments and structured functions.
@@ -113,6 +119,10 @@ data <- list(
 
 ---
 
-## 🎓 Good Luck!
+##  Good Luck!
 
 This assignment is a chance to test and apply your learning. Focus on clarity, accuracy, and showcasing your understanding of R.
+
+
+## References
+Matloff, N. (2011) The Art of R Programming, No Starch Press. Available at: https://learning.oreilly.com/library/view/the-art-of/9781593273842/ch02s06.html#vector_in_comma_vector_out [Accessed 26 May 2025], Section: Vectorized Operations.
