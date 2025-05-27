@@ -22,23 +22,25 @@ This formative assignment is designed to help you consolidate key concepts in R 
 Answer each question in **no more than 60 words**:
 
 - **a)** What is vectorization in R, and what are its benefits?
-
+```
   - Vectorisation is an implicit process in R where an operation can be performed on each element of a vector.
   - A benefit of vectorisation is that the code becomes more readable because there is no need to explicitly loop over elements of a vector.
   - For example, two vectors can be added together, or   a numerical value can be multiplied for all the vector values. (Matloff, 2011)
-  
+```  
 - **b)** What is recycling in R? Provide an example.
-  
+```  
   - Recycling rules apply when performing operations on vectors of different lengths.
   - If one variable is a single number, it is treated as a vector matching the length of the other variable.
   - R will recycle the shorter vector if the longer vector's length is a multiple of the shorter vector's length.
   - Otherwise, it issues a warning and performs the operation on overlapping elements.(Hadley, 2025)
-
+```
 - **c)** What is operator precedence? Provide an R example.
+  ```
   - Operator precedence in computer science simply means the order which mathematical and logical operations are to be performed
   - One notable exception any operation in side brackets are performed first from left to right
   - Examples in R
     This example 3 * 3 is performed before any additions according to order of precedence
+  ```
     ``` r
     > a <- 3 * 3 + 2
     > cat("a: ", a)
@@ -52,12 +54,14 @@ Answer each question in **no more than 60 words**:
     b:  15
     > 
 - **d)** What is function scope, and why is it important?
+  ```
   - Scope denotes the visibility or accessibility of variables and functions.
   - Variables defined in the global or higher scope will be visible within any       function defined within the script.
   - Variables or functions defined within a function will only be visible within     that function's scope.
   - In the event of naming conflict, the definition and assignment within the        function's scope takes precedence over higher scopes, including global scope.
   - Understanding the function scope is essential for tracking names,
     assignments, and values of variables and functions at any moment.
+  ```
 ---
 
 ### Q2: Control Flow and Looping
