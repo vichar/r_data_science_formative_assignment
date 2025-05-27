@@ -66,7 +66,39 @@ Answer each question in **no more than 60 words**:
 
 ### Q2: Control Flow and Looping
 
-- **a)** Write an R function `fibonacci(n)` that returns the first `n` Fibonacci numbers as a vector.  
+- **a)** Write an R function `fibonacci(n)` that returns the first `n` Fibonacci numbers as a vector.
+``` r
+Return vector of numbers 
+#' Example fibonacci_function(5)
+#' # Output: "0, 1, 1, 2, 3"
+fibonacci_function <- function(term_number) {
+  # starting values
+  first_term = 0
+  second_term = 1
+  # substracting 1 from the number term because we are starting from 0
+  term_number = term_number - 1
+  # starting value is set to 0 for starting term
+  current_term = 0
+  # adding first two elements to list
+  fibo_values <- list(first_term, second_term)
+  # only valid for when term number is great than 2
+  if (term_number > 2) {
+    for (x in 2:term_number) {
+      current_term = first_term + second_term
+      fibo_values <- append(fibo_values, current_term)
+      first_term = second_term
+      second_term = current_term
+    }
+    
+  # if term is 1 then simply return the term number which can be either 1, 0, negative
+  } else {
+    fibo_values <- (term_number)
+  }
+  # print Fibonacci array
+  result <- toString(fibo_values)
+  return(result)
+}
+```
 - **b)** Write a `while` loop that prints Fibonacci numbers **until their sum exceeds 1000**.
 
 ---
