@@ -56,9 +56,9 @@ Answer each question in **no more than 60 words**:
 - **d)** What is function scope, and why is it important?
   ```
   - Scope denotes the visibility or accessibility of variables and functions.
-  - Variables defined in the global or higher scope will be visible within any       function defined within the script.
-  - Variables or functions defined within a function will only be visible within     that function's scope.
-  - In the event of naming conflict, the definition and assignment within the        function's scope takes precedence over higher scopes, including global scope.
+  - Variables defined in the global or higher scope will be visible within any function defined within the script.
+  - Variables or functions defined within a function will only be visible within that function's scope.
+  - In the event of naming conflict, the definition and assignment within the function's scope takes precedence over higher scopes, including global scope.
   - Understanding the function scope is essential for tracking names,
     assignments, and values of variables and functions at any moment.
   ```
