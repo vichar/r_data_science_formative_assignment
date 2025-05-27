@@ -38,7 +38,7 @@ Answer each question in **no more than 60 words**:
   - Operator precedence in computer science simply means the order which mathematical and logical operations are to be performed
   - One notable exception any operation in side brackets are performed first from left to right
   - Examples in R
-    This example 3 * 3 is performed before any additions according to roder of precedence
+    This example 3 * 3 is performed before any additions according to order of precedence
     ``` r
     > a <- 3 * 3 + 2
     > cat("a: ", a)
@@ -51,15 +51,6 @@ Answer each question in **no more than 60 words**:
     > cat ("b: ", b)
     b:  15
     > 
-    ```
-    This example 3 + 2 is performed due to ( ) has higher precedence than
-    multiplication
-    ``` r
-    > b <- 3 * (3 + 2)
-    > cat ("b: ", b)
-    b:  15
-    > 
-    ```
 - **d)** What is function scope, and why is it important?
   - Scope denotes the visibility or accessibility of variables and functions.
   - Variables defined in the global or higher scope will be visible within any       function defined within the script.
