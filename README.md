@@ -100,7 +100,63 @@ fibonacci_function <- function(term_number) {
 }
 ```
 - **b)** Write a `while` loop that prints Fibonacci numbers **until their sum exceeds 1000**.
+``` r
+#' input parameters: term_number Integer. The number of terms in the Fibonacci sequence to compute.
+#'
+#' return:  No return value. Prints the Fibonacci sequence.
+#'
+#' details:
+#' - The Fibonacci sequence starts with 0 and 1.
+#' - If `term_number` <= 2, the function handles the case differently and simply returns the index.
+#' - If `term_number` is greater than 2, the function constructs a sequence iteratively.
+#' - if `sum of fibonacci values ` is greater than sub_limit it will then terminate
+#'
+#' examples
+#' fibonacci_function(16,1000)
+#' Accumulated Value:  1596 Exceeds:  1000
+#' Fibonacci Sequence:  0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610
+fibonacci_function <- function(sum_limit) {
+  # starting values
+  first_term = 0
+  second_term = 1
+  # starting value is set to 0 for starting term
+  current_term = 0
+  # adding first two elements to list
+  # only valid for when term number is great than 2
+  # set accumulated to starting value, 0
+  accumulated_sum = 0
+  # Keeping running 
+  while (TRUE) {
+    # Current term becomes first term + second term
+    current_term = first_term + second_term
+    # Print out current term 
+    cat(current_term)
+    # Exit Loop when Accumulated reaches indicated limit or greater
+    if (accumulated_sum >= sum_limit) {
+      cat("\n")
+      break
+    } else { # add command to output 
+      cat(" , ")
+    }
+    # Advancing, first term set set to value of second term 
+    first_term = second_term
+    # current term beocomes second term 
+    second_term = current_term
+    # add to accumulated sum 
+    accumulated_sum <- accumulated_sum + current_term
+    
+  }
+}
 
+#' Runner Function
+#'
+#' Demonstrates the usage of `fibonacci_function()` by calling it accumulated value limit, 1000.
+runner_function <- function() {
+  fibonacci_function(1000)
+}
+
+runner_function()
+```
 ---
 
 ### Q3: Functions and Data Manipulation
@@ -182,5 +238,5 @@ This assignment is a chance to test and apply your learning. Focus on clarity, a
 
 
 ## References
-Matloff, N. (2011) The Art of R Programming, No Starch Press. Available at: https://learning.oreilly.com/library/view/the-art-of/9781593273842/ch02s06.html#vector_in_comma_vector_out [Accessed 26 May 2025], Section: Vectorized Operations.
-Hadley, W. (2025) R for Data Science (2e). Available at: https://r4ds.hadley.nz/numbers.html#numeric-summaries [Accessed 26 May 2025], Section: Numeric Transformations.
+- Matloff, N. (2011) The Art of R Programming, No Starch Press. Available at: https://learning.oreilly.com/library/view/the-art-of/9781593273842/ch02s06.html#vector_in_comma_vector_out [Accessed 26 May 2025], Section: Vectorized Operations.
+- Hadley, W. (2025) R for Data Science (2e). Available at: https://r4ds.hadley.nz/numbers.html#numeric-summaries [Accessed 26 May 2025], Section: Numeric Transformations.
