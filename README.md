@@ -240,3 +240,4 @@ This assignment is a chance to test and apply your learning. Focus on clarity, a
 ## References
 - Matloff, N. (2011) The Art of R Programming, No Starch Press. Available at: https://learning.oreilly.com/library/view/the-art-of/9781593273842/ch02s06.html#vector_in_comma_vector_out [Accessed 26 May 2025], Section: Vectorized Operations.
 - Hadley, W. (2025) R for Data Science (2e). Available at: https://r4ds.hadley.nz/numbers.html#numeric-summaries [Accessed 26 May 2025], Section: Numeric Transformations.
+- Matloff, N. (2025) The Art of R Programming, Section: Introduction to Functions. No Starch Press. Available at: O'Reilly Learning (Accessed: 28 May 2025).
