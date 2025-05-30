@@ -241,3 +241,4 @@ This assignment is a chance to test and apply your learning. Focus on clarity, a
 - Matloff, N. (2011) The Art of R Programming, No Starch Press. Available at: https://learning.oreilly.com/library/view/the-art-of/9781593273842/ch02s06.html#vector_in_comma_vector_out [Accessed 26 May 2025], Section: Vectorized Operations.
 - Hadley, W. (2025) R for Data Science (2e). Available at: https://r4ds.hadley.nz/numbers.html#numeric-summaries [Accessed 26 May 2025], Section: Numeric Transformations.
 - Matloff, N. (2025) The Art of R Programming, Section: Introduction to Functions. No Starch Press. Available at: https://learning.oreilly.com/library/view/the-art-of/9781593273842/ch01s03.html (Accessed: 28 May 2025).
+- DataCamp (2025) Creating a named list. Available at: [DataCamp] (https://www.datacamp.com/tutorial/creating-lists-r) (Accessed: 30 May 2025). 
