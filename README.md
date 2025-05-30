@@ -161,7 +161,73 @@ runner_function()
 
 ### Q3: Functions and Data Manipulation
 
-- **a)** Write a function `calculate_mean_sd()` that takes a numeric vector and returns a **list** containing its **mean** and **standard deviation**.  
+- **a)** Write a function `calculate_mean_sd()` that takes a numeric vector and returns a **list** containing its **mean** and **standard deviation**.
+    ``` r
+      calculate_mean_sd <- function(...) { # Take in any vector of any value types 
+    input_values <- c(...) # assign to a local variable
+    
+    # validate data type 
+    if (!is.numeric(input_values)) {
+      cat("Invalid Input Type!" , "\n")
+      return() #exit 
+    }
+    
+    #calculate standard deviation skipping any empty (na.rm)
+    standard_dev <- sd(input_values, na.rm = TRUE)
+    
+    #calculate mean 
+    average_value <- mean(input_values)
+    
+    #construct result list 
+    result_list <- c(sd_value = standard_dev, average_value = average_value)
+    return(result_list)
+  }
+  
+  # Happy case 
+  runner_function_normal_operation <- function() {
+    results_list <- calculate_mean_sd(10, 2, 4, 5, 6, 7, 8, 11, 12, 13)
+    
+    # Not null then 
+    if (length(results_list) > 0) {
+      
+      # Print out Structure 
+      cat("structure: ")
+      str(results_list)
+      
+      # Print out mean then follows by Standard Deviation 
+      cat(
+        "\n",
+        "result_list contains: ",
+        "average :",
+        results_list[['average_value']],
+        " standard deviation: ",
+        results_list[['sd_value']]
+      )
+    }
+  }
+  
+  runner_function_normal_operation()
+  
+  # Testing invalid input in this case string. 
+  runner_function_error <- function() {
+    results_list <- calculate_mean_sd("test 1", "test 2")
+    
+    if (length(results_list) > 0) {
+      cat("structure: ")
+      str(results_list)
+      cat(
+        "\n",
+        "result_list contains: ",
+        "average :",
+        results_list[['average_value']],
+        " standard deviation: ",
+        results_list[['sd_value']]
+      )
+    }
+  }
+  
+  runner_function_error()
+  ```
 - **b)** Write a function `filter_data()` that accepts:
   - a **data frame**,  
   - a **column name**, and  
