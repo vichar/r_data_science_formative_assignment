@@ -373,6 +373,8 @@ This assignment is a chance to test and apply your learning. Focus on clarity, a
 
 - DataCamp (2025) Creating a named list. Available at: [DataCamp](https://www.datacamp.com/tutorial/creating-lists-r) (Accessed: 30 May 2025).
 
+- DataCamp (2024) *Subsetting in R Tutorial*. Available at: [DataCamp](https://www.datacamp.com/tutorial/subsets-in-r) (Accessed: 30 May 2025).
+
 - Hadley, W. (2025) R for Data Science (2e). Available at: [Hadley](https://r4ds.hadley.nz/numbers.html#numeric-summaries) (Accessed: 26 May 2025), Section: Numeric Transformations.
 
 - Matloff, N. (2011) The Art of R Programming. No Starch Press. Available at: [Matloff](https://learning.oreilly.com/library/view/the-art-of/9781593273842/ch02s06.html#vector_in_comma_vector_out) (Accessed: 26 May 2025), Section: Vectorized Operations.
