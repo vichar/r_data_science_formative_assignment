@@ -258,7 +258,50 @@ runner_function()
   - a **column name**, and  
   - a **threshold** value.  
   It should return a filtered data frame with rows where the column value exceeds the threshold.
+``` r
 
+
+
+# filter data function takes in a data frame, required column and threshold
+filter_data <- function (d_frame, required_column, threshold) {
+  if (!is.data.frame(d_frame)) {
+    cat("This requires Data Frame to proceed!")
+    return()
+  }
+  # filter levels exceeding threshold only
+  result <- d_frame[d_frame[[required_column]] > threshold, ]
+  return(result)
+}
+
+# Runner function contains sample data
+# This case study was selected because it fulfills requirement in the prompt
+# filtering data exceeding threshold.
+# In this HESA is only interested in "university students" so any students
+# enrolled in any levels below 7 will be excluded from HESA statistics
+runner_function_hesa <- function() {
+  students_levels <- data.frame (
+    "Name" = c(
+      "Ernie",
+      "Marc",
+      "Laura",
+      "Jen",
+      "Angus",
+      "Reid",
+      "Tyler",
+      "Taylor",
+      "Ankita",
+      "Attisha"
+    ),
+    "SCQF" = c(5, 5, 6, 6, 7, 7, 8, 9, 11, 11)
+  )
+  
+  
+  result <- filter_data(students_levels, "SCQF", 6)
+  print(result)
+  
+}
+runner_function_hesa() 
+```
 ---
 
 ### Q4: Data Manipulation and Analysis with `mtcars`
