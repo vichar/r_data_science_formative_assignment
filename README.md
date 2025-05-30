@@ -163,7 +163,7 @@ runner_function()
 
 - **a)** Write a function `calculate_mean_sd()` that takes a numeric vector and returns a **list** containing its **mean** and **standard deviation**.
     ``` r
-      calculate_mean_sd <- function(...) { # Take in any vector of any value types 
+    calculate_mean_sd <- function(...) { # Take in any vector of any value types 
     input_values <- c(...) # assign to a local variable
     
     # validate data type 
