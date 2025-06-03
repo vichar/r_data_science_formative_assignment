@@ -372,7 +372,7 @@ This assignment is a chance to test and apply your learning. Focus on clarity, a
 ## References
 
 - DataCamp (2025) Creating a named list. Available at: [DataCamp](https://www.datacamp.com/tutorial/creating-lists-r) (Accessed: 30 May 2025).
-
+- DataCamp. *Sorting in R*. Retrieved June 3, 2025, from [DataCamp](https://www.datacamp.com/doc/r/sorting) [Accessed: June 3, 2025].
 - DataCamp (2024) *Subsetting in R Tutorial*. Available at: [DataCamp](https://www.datacamp.com/tutorial/subsets-in-r) (Accessed: 30 May 2025).
 
 - Hadley, W. (2025) R for Data Science (2e). Available at: [Hadley](https://r4ds.hadley.nz/numbers.html#numeric-summaries) (Accessed: 26 May 2025), Section: Numeric Transformations.
