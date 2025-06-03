@@ -259,9 +259,6 @@ runner_function()
   - a **threshold** value.  
   It should return a filtered data frame with rows where the column value exceeds the threshold.
 ``` r
-
-
-
 # filter data function takes in a data frame, required column and threshold
 filter_data <- function (d_frame, required_column, threshold) {
   if (!is.data.frame(d_frame)) {
@@ -361,7 +358,7 @@ Using R’s built-in `mtcars` dataset:
   
   runner()
 ```
-### Hint: Consider using `tapply()` for a concise solution._
+- Hint: Consider using `tapply()` for a concise solution._
 
 ---
 
