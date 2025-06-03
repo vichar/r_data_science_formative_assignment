@@ -339,7 +339,29 @@ Using R’s built-in `mtcars` dataset:
   runner()
 ```   
 - **b)** Calculate the **average weight (`wt`)** for cars grouped by number of cylinders (`cyl`).  
-  _Hint: Consider using `tapply()` for a concise solution._
+``` r
+  library(tidyverse)
+  
+  #import mtcars as a data frame
+  data(mtcars)
+  
+  average_weight <- function() {
+    #convert cylinder counts into factor
+    mtcars$cyl <- as.factor(mtcars$cyl)
+    #calculate average 
+    average_weights <- tapply(mtcars$wt, mtcars$cyl, mean)
+    #prepare formatted output
+    labels <- sprintf("%s cylinders: %.2f lbs", names(average_weights*1000), average_weights)
+    return(labels)
+  }
+  runner <- function() {
+    cat("Average Weights:", "\n")
+    cat(average_weight(), "\n")
+  }
+  
+  runner()
+```
+### Hint: Consider using `tapply()` for a concise solution._
 
 ---
 
