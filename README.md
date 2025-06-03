@@ -308,7 +308,36 @@ runner_function_hesa()
 
 Using R’s built-in `mtcars` dataset:
 
-- **a)** Identify the cars with the **highest** and **lowest** `mpg` (miles per gallon).  
+- **a)** Identify the cars with the **highest** and **lowest** `mpg` (miles per gallon).
+``` r
+  library(tidyverse)
+
+  mtcars_lowest_mpg <- function () {
+    #Sort by MPG in ascending order 
+    ascending_list <- mtcars[order(mtcars$mpg), ]
+    #Select the first one from the sorted list 
+    head(ascending_list, 1)
+  }
+
+  mtcars_highest_mpg <- function () {
+    #Sort by MPG in aescending order 
+    descending_list  <- mtcars[order(-mtcars$mpg), ]
+    #Select the first one from the sorted list 
+    head(descending_list, 1)
+  }
+
+  #Print out information here
+  runner <- function () {
+    cat("\n")
+    cat("Car with highest MPG (most fuel efficient): ", "\n")
+    print(mtcars_highest_mpg())
+    cat("\n")
+    cat("Car with lowest MPG (least fuel efficient): ", "\n")
+    print(mtcars_lowest_mpg())
+  }
+
+  runner()
+```   
 - **b)** Calculate the **average weight (`wt`)** for cars grouped by number of cylinders (`cyl`).  
   _Hint: Consider using `tapply()` for a concise solution._
 
