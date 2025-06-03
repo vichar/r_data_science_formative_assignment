@@ -2,9 +2,9 @@
 
 ## Formative Assignment (Non-graded)
 
-
 **Due Date:** 4 June 2025, 10:59 PM GMT  
 **Release Date:** 18 May 2025, 11:00 PM GMT 
+
 **Submission Format:** Word Document or PDF  
 **Submission Method:** Email to `weeklyclasses@conted.ox.ac.uk`  
 **Attach:** Completed Declaration of Authorship form
