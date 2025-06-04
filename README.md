@@ -384,11 +384,93 @@ data <- list(
 
 - **a)** Write your own R code to generate a **scatter plot** matching the one linked in the course materials.
 
+### Answer
+
 ![scatter plot](assets/scatter-plot-1.png)
+
+``` r 
+library(ggplot2)
+
+#' Generate Random Scatter Data
+#'
+#' This function generates a data frame of 100 points with normally distributed `x` values
+#' and corresponding `y` values computed as `x^3 + noise`.
+#'
+#' @param seed_value Integer seed for reproducibility of the random number generator.
+#'
+#' @return A data frame with two columns: \code{x_values} and \code{y_values}.
+#'
+#' @examples
+#' generate_scatter_data(123)
+generate_scatter_data <- function(seed_value) {
+  set.seed(seed_value)
+  x <- rnorm(100)
+  y <- x^3 + rnorm(100)
+  result <- data.frame(x_values = x, y_values 
+                       = y)
+  return(result)
+}
+
+#' Run Scatter Plot Generator and Plot
+#'
+#' This function runs the scatter data generator with a fixed seed,
+#' displays a summary of the data, and plots the scatter plot using ggplot2.
+#'
+#' @return A ggplot2 scatter plot object (and prints it to the active graphics device).
+#'
+#' @examples
+#' runner()
+
+runner <- function() {
+  scatter_data <- generate_scatter_data(1);
+  summary(scatter_data)
+  ggplot(
+    data = scatter_data,
+    mapping = ( aes(x = x_values, y = y_values)) 
+  ) + geom_point()
+
+}
+runner()
+```
+
+![box plot](assets/scatter-plot-answer.png)
 
 - **b)** Write your own R code to generate a **box plot** matching the one linked in the course materials.
 
 ![box plot](assets/box-plot.png)
+
+### Answer
+
+``` r 
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+generate_box_plot_data <- function (seed_value) {
+  set.seed(seed_value)
+  results <- data.frame(
+    Group1 = rnorm(100),
+    Group2 = rnorm(100, mean = 2),
+    Group3 = rnorm(100, mean = 1.5)
+  )
+  return(results)
+}
+
+box_plot_function <- function() {
+  data <- generate_box_plot_data(1)
+  data_long_values <- data%>% 
+    pivot_longer(cols = everything(), names_to = "Group", values_to = "Value")
+  ggplot(data_long_values, aes(x = Group, y = Value)) + geom_boxplot(fill = "blue") + theme_minimal() + labs(title = "Boxplot (3 Groups)", x = "Group", y = "Value")
+}
+
+runner <- function() {
+  box_plot_function()
+}
+
+runner()
+```
+
+![box plot](assets/box-plot-answer.png)
 
 ---
 
@@ -421,8 +503,12 @@ This assignment is a chance to test and apply your learning. Focus on clarity, a
 ## References
 
 - DataCamp (2025) Creating a named list. Available at: [DataCamp](https://www.datacamp.com/tutorial/creating-lists-r) (Accessed: 30 May 2025).
+
 - DataCamp (2025) *Sorting in R*. Retrieved June 3, 2025, from [DataCamp](https://www.datacamp.com/doc/r/sorting) [Accessed: June 3, 2025].
+
 - DataCamp (2024) *Subsetting in R Tutorial*. Available at: [DataCamp](https://www.datacamp.com/tutorial/subsets-in-r) (Accessed: 30 May 2025).
+
+- Hadley, W. (2025) R for Data Science (2e). Available at: [Hadley](https://r4ds.hadley.nz/data-visualize.html) (Accessed: 4 June 2025), Section: Data visualization.
 
 - Hadley, W. (2025) R for Data Science (2e). Available at: [Hadley](https://r4ds.hadley.nz/numbers.html#numeric-summaries) (Accessed: 26 May 2025), Section: Numeric Transformations.
 
